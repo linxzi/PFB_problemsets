@@ -1,0 +1,16 @@
+  193  git commit -m 'adding oops.txt'
+  194  git push
+  195  git rm oops.txt
+  196  git commit -m 'removing oops.txt'
+  197  git push
+  198  vi oops2
+  199  git add oops2
+  200  git commit -m 'adding oops2'
+  201  git push
+  202  rm oops2
+  203  git add oops2
+  204  git commit -m 'removing oops2'
+  205  git push
+  206  vi never
+  207  git add never
+  208  git reset never
