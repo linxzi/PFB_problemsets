@@ -61,3 +61,24 @@ startDNA = countDNA.find('GAATTC') + 1
 endDNA = countDNA.find('GAATTC') + 7
 
 print(f'startPos:{startDNA} endPos:{endDNA}')
+
+# start position opposite strand
+rEcoDNA = ''
+for seq in countDNA:
+    if seq == 'T':
+        rDNA += 'A'
+    elif seq == 'A':
+        rDNA += 'T'
+    elif seq == 'C':
+        rDNA += 'G'
+    elif seq == 'G':
+        rDNA += 'C'
+
+rEcoDNA = rEcoDNA[::-1]
+
+startEcoDNA = rEcoDNA.find('GAATTC') + 1
+endEcoDNA = rEcoDNA.find('GAATTC') + 7
+
+print(f'startPos:{startEcoDNA} endPos:{endEcoDNA}')
+
+
