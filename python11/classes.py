@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 ########################
-# 1 - 4
+# 1 - 7
 ########################
 class DNARecord(object):
   def __init__(self, sequence, gene_name, species_name): 
@@ -44,3 +44,15 @@ print(dna_rec_obj_1.count_nucleotide())
 print(f'GC content: {dna_rec_obj_1.get_gc_content():.2f}%')
 print(dna_rec_obj_1.fasta_format())
 
+
+######################
+# Challenge Question
+######################
+
+def comp(obj1,obj2):
+  if obj1.get_gc_content() == obj2.get_gc_content():
+    return True
+  else:
+    return False
+
+print(comp(dna_rec_obj_1, dna_rec_obj_1))  
